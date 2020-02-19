@@ -60,8 +60,15 @@ project-store = /opt/pydaemon/data/scrapy-do
 [web]
 interfaces = 0.0.0.0:4000
 
+auth = on
+auth-db = /etc/scrapy-do/auth.db
 EOF
 ```
+
+- *Create file for digest authentication in /etc/scrapy-do/auth.db*
+- *username:password*
+- *plain text*
+
 
 **Setting up the daemon service**
 
